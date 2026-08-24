@@ -28,23 +28,32 @@ An automated Bash utility designed for **Bazzite / Fedora Atomic** and general L
 
 ---
 
+
+
+```bash
+git clone https://github.com/DamianKA1993/blackwell-egpu-manager.git
+cd blackwell-egpu-manager
+chmod +x install.sh uninstall.sh
+./install.sh
+```
+
 ## 🚀 Installation & Usage
 
 1. **Clone the repository**:
-   \`\`\`bash
+   ```bash
    git clone https://github.com/DamianKA1993/blackwell-egpu-hotplug-injector.git
    cd blackwell-egpu-hotplug-injector
-   \`\`\`
+   ```
 
 2. **Make the script executable**:
-   \`\`\`bash
+   ```bash
    chmod +x blackwell-egpu-hotplug-injector.sh
-   \`\`\`
+   ```
 
 3. **Run before plugging in the cable**:
-   \`\`\`bash
+   ```bash
    sudo ./blackwell-egpu-hotplug-injector.sh
-   \`\`\`
+   ```
 
 4. **Connect your eGPU**:
    When prompted, plug in the Thunderbolt/USB4 cable. The script will automatically authorize the device, negotiate link speed (Gen4/Gen5), disable ASPM, load the NVIDIA drivers, and print the resulting hardware status.
@@ -55,13 +64,13 @@ An automated Bash utility designed for **Bazzite / Fedora Atomic** and general L
 
 Once executed, verify your link status and clock states:
 
-\`\`\`bash
+```bash
 # Check link generation, width, and active clock speeds
 nvidia-smi --query-gpu=name,pcie.link.gen.current,pcie.link.gen.max,pcie.link.width.current,clocks.current.graphics,clocks.current.memory --format=csv
 
 # Verify hardware-level PCIe link registers
 lspci -vv -d 10de: | grep -E 'LnkSta:'
-\`\`\`
+```
 
 ---
 
