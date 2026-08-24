@@ -1,4 +1,4 @@
-# NVIDIA Blackwell eGPU Hot-Plug & Link Optimizer
+# NVIDIA Blackwell eGPU Hot-Plug & Link Optimizer Injector
 
 An automated Bash utility designed for **Bazzite / Fedora Atomic** and general Linux environments. It handles seamless eGPU hot-plugging, PCIe link speed negotiation (**Gen3 / Gen4 / Gen5** up to **32 GT/s**), ASPM/L1SS power management overrides, and P0 performance state enforcement for **NVIDIA GeForce RTX 50-series (Blackwell)** eGPUs over **USB4, Thunderbolt 4, and Thunderbolt 5** connections.
 
