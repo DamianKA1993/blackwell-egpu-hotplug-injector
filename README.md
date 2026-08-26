@@ -28,15 +28,6 @@ An automated Bash utility designed for **Bazzite / Fedora Atomic** and general L
 
 ---
 
-
-
-```bash
-git clone https://github.com/DamianKA1993/blackwell-egpu-manager.git
-cd blackwell-egpu-manager
-chmod +x install.sh uninstall.sh
-./install.sh
-```
-
 ## 🚀 Installation & Usage
 
 1. **Clone the repository**:
