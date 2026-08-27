@@ -51,6 +51,17 @@ An automated Bash utility designed for **Bazzite / Fedora Atomic** and general L
 
 ---
 
+### 💻 Tested Hardware & Community Reports
+
+If this injector script resolved your eGPU hot-plug or stability issues, please take 10 seconds to confirm your setup:
+
+[![Confirm Working Setup](https://img.shields.io/badge/eGPU%20Working%3F-Report%20Hardware%20Setup-brightgreen?style=for-the-badge&logo=github)](https://github.com/DamianKA1993/blackwell-egpu-hotplug-injector/issues/new?template=hardware_success.yml)
+
+*(Click the button above to submit your device/OS setup directly)*
+
+---
+
+
 ## 🔍 Verification
 
 Once executed, verify your link status and clock states:
