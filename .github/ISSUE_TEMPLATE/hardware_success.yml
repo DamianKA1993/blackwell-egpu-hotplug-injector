@@ -1,0 +1,42 @@
+name: Confirm Working Setup
+description: Let the community know this script worked on your hardware
+title: "[Hardware Confirmation]: "
+labels: ["documentation"]
+body:
+  - type: markdown
+    attributes:
+      value: |
+        ### Thanks for confirming!
+        This helps other Linux (Bazzite/Fedora/Arch) users know which hardware combinations work with the injector script.
+  - type: input
+    id: host_device
+    attributes:
+      label: Host Device & CPU
+      description: What is your laptop/handheld/mini-PC model and processor?
+      placeholder: "e.g., ROG Ally X, Lenovo Legion Go, Minisforum (Ryzen 7840HS)"
+    validations:
+      required: true
+  - type: dropdown
+    id: pcie_speed
+    attributes:
+      label: Negotiated Link Speed
+      options:
+        - "PCIe Gen4 x4 (16 GT/s)"
+        - "PCIe Gen3 x4 (8 GT/s)"
+        - "PCIe Gen5 x4 (32 GT/s)"
+        - "Other"
+    validations:
+      required: true
+  - type: input
+    id: distro_kernel
+    attributes:
+      label: Linux Distro & Environment
+      description: Which OS and setup are you running?
+      placeholder: "e.g., Bazzite / Fedora Silverblue / SteamOS"
+    validations:
+      required: false
+  - type: textarea
+    id: notes
+    attributes:
+      label: Additional Notes
+      description: Any specific dock quirks or settings used? (Optional)
